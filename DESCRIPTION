@@ -11,3 +11,5 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 3.5)
 LazyData: true
+URL: https://github.com/KnechtTheDots/LonCalGrowthAnalysis
+BugReports: https://github.com/KnechtTheDots/LonCalGrowthAnalysis/issues
