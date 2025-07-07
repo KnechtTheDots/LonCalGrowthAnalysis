@@ -1,0 +1,15 @@
+#' Seedling Phenotypic Data
+#'
+#' Data set of phenotypes for *Mimulus aurantiacus* var *longiflorus* x *Mimulus aurantiacus* var *calycinus* crosses.
+#'
+#' @format ## `phenotypes`
+#' A data frame with 418 rows and 5 columns:
+#' \describe{
+#'   \item{day_4}{Seedling leaf area (mm^2) 1 day after germination}
+#'   \item{day_17}{Seedling leaf area (mm^2) 14 days after germination}
+#'   \item{rgr}{Relative growth rate from day 4 to day 17, i.e. the change in log(area) between these timepoints}
+#'   \item{height}{Height (cm) measured ~4 months after germination}
+#'   \item{line}{cross type, i.e. intraparental *longiflorus*, intraparental *calycinus*, F1 or F2 hybrids}
+#' }
+#' @source Not yet published.
+"phenotypes"
