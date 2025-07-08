@@ -18,11 +18,11 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of LonCalGrowthAnalysis is to document the data and analysis conducted for: insert when paper is out.
+The goal of LonCalGrowthAnalys is is to document the data and analysis conducted for: insert when paper is out.
 
 ## Installation
 
-You can install the development version of LonCalGrowthAnalysis from [GitHub](https://github.com/) with:
+You can install the development version of LonCalGrowthAnalys is from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
@@ -40,7 +40,6 @@ library(tidyverse)
 # For example here is the distribution of F2 relative growth rates
 
 phenotypes %>% 
-  drop_na(rgr) %>% 
   filter(line != "F1") %>% 
   mutate(line = ifelse(line == "F2", "F2", "Parent"),
          line = factor(line, levels = c("Parent", "F2"))) %>% 

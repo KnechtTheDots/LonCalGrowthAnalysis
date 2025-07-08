@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{phenotypes}}{
 
-A data frame with 418 rows (seedlings) and 5 columns (phenotypes):
+A data frame with 403 rows (seedlings) and 5 columns (phenotypes):
 \describe{
 \item{day_4}{Seedling leaf area (mm^2) 1 day after germination}
 \item{day_17}{Seedling leaf area (mm^2) 14 days after germination}

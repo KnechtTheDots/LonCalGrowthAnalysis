@@ -6,12 +6,12 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of LonCalGrowthAnalysis is to document the data and analysis
+The goal of LonCalGrowthAnalys is is to document the data and analysis
 conducted for: insert when paper is out.
 
 ## Installation
 
-You can install the development version of LonCalGrowthAnalysis from
+You can install the development version of LonCalGrowthAnalys is from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -33,7 +33,6 @@ library(tidyverse)
 # For example here is the distribution of F2 relative growth rates
 
 phenotypes %>% 
-  drop_na(rgr) %>% 
   filter(line != "F1") %>% 
   mutate(line = ifelse(line == "F2", "F2", "Parent"),
          line = factor(line, levels = c("Parent", "F2"))) %>% 
@@ -48,6 +47,8 @@ phenotypes %>%
         legend.position.inside = c(.25, .75),
         legend.direction = "horizontal",
         legend.box.background = element_rect(color = "black"))
+#> Warning: Removed 14 rows containing non-finite outside the scale range
+#> (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />

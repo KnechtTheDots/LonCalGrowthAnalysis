@@ -34,6 +34,7 @@ phenotypes <- germ %>%
   select(germ_day, day_4, day_17, height, line) %>%
   drop_na(day_4) %>%
   mutate(rgr = (log(day_17) - log(day_4))/(17-4)) %>%
+  drop_na(rgr) %>%
   select(day_4, day_17, rgr, height, line)
 
 

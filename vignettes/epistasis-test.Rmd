@@ -16,9 +16,4 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(LonCalGrowthAnalysis)
-
 ```
-
-$$
-\mu(F_2) = \frac{2\mu(F_1) + \mu(P_1) + \mu(P_2)}{4}
-$$
