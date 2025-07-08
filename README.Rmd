@@ -31,13 +31,29 @@ pak::pak("KnechtTheDots/LonCalGrowthAnalysis")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+We can see that the distribution of parental relative growth rates (RGR) is on the upper portion of the F2 RGRs. The purpose of this project is to learn something about the genetic architecture and if it contributes to reproductive isolation between the parents.
 
-```{r example}
+```{r example, message=FALSE}
 library(LonCalGrowthAnalysis)
-# The phenotypes data set includes seedling phenotypese for 418 seedlings. 
+library(tidyverse)
+# The phenotypes data set includes seedling phenotypes for 418 seedlings. 
 # For example here is the distribution of F2 relative growth rates
 
-hist(phenotypes$rgr[phenotypes$line=="F2"], main = "", xlab = "Relative Growth Rates")
+phenotypes %>% 
+  drop_na(rgr) %>% 
+  filter(line != "F1") %>% 
+  mutate(line = ifelse(line == "F2", "F2", "Parent"),
+         line = factor(line, levels = c("Parent", "F2"))) %>% 
+  ggplot(aes(x = rgr, fill = line)) +
+  geom_histogram(bins = 20, color = "black") +
+  scale_fill_manual(values = c("grey", "white")) +
+  labs(x = "Relative Growth Rate",
+       y = "",
+       fill = "") +
+  theme_minimal() +
+  theme(legend.position = "inside",
+        legend.position.inside = c(.25, .75),
+        legend.direction = "horizontal",
+        legend.box.background = element_rect(color = "black"))
 
 ```
