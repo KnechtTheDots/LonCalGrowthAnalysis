@@ -2,6 +2,7 @@
 
 export(b_boot)
 export(boot_mat)
+export(epi_test)
 export(mu_boot)
 export(sd_boot)
 export(var_boot)

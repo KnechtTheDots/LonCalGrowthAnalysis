@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(LonCalGrowthAnalysis)
 
-z <- rnorm(100)
-hist(b_boot(z, fun = mu_boot))
 ```
+
+$$
+\mu(F_2) = \frac{2\mu(F_1) + \mu(P_1) + \mu(P_2)}{4}
+$$
