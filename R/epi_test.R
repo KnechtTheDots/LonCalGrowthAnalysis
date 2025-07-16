@@ -12,5 +12,5 @@
 #' @export
 #'
 epi_test <- function(p1, p2, f1, f2){
-  f2 - (f1/2 + (p1 + p2)/4)
+  return(f2 - (f1/2 + (p1 + p2)/4))
 }

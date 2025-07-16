@@ -1,8 +1,8 @@
 Package: LonCalGrowthAnalysis
-Title: What the Package Does (One Line, Title Case)
+Title: Analysis of seedling phenotypes in Mimulus aurantiacus crosses
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+    person("Josh", "Knecht", , "jknecht1@binghamton.edu", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -14,7 +14,10 @@ LazyData: true
 URL: https://github.com/KnechtTheDots/LonCalGrowthAnalysis
 BugReports: https://github.com/KnechtTheDots/LonCalGrowthAnalysis/issues
 Imports: 
-    gtools
+    dplyr,
+    ggplot2,
+    gtools,
+    magrittr
 Suggests: 
     knitr,
     rmarkdown
